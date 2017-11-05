@@ -9,6 +9,6 @@ jobs:
 - name: test-app
   plan:
   - get: flight-school
-  - task: tests
-    privileged: true
+    trigger: true
+  - task: test_123
     file: flight-school/build.yml
